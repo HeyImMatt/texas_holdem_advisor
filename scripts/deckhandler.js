@@ -9,17 +9,16 @@ const communityCard3 = { value: this.value, suit: this.suit };
 const communityCard4 = { value: this.value, suit: this.suit };
 const communityCard5 = { value: this.value, suit: this.suit };
 
-let gameDeck = createDeck();
+let gameDeck = [];
 
 function createDeck() {
-    deck = new Array();
     for (let i = 0; i < deckSuits.length; i++) {
         for (let x = 0; x < deckValues.length; x++) {
             let card = { value: deckValues[x], suit: deckSuits[i] };
-            deck.push(card);
+            gameDeck.push(card);
         }
     }
-    return deck.reverse();
+    gameDeck.reverse();
 }
 
 function renderGameDeck() {
@@ -61,3 +60,6 @@ function removeCard(array, value, suit) {
         return;
     } else array.splice(i, 1);
 }
+
+createDeck();
+renderGameDeck();

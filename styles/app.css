@@ -7,6 +7,7 @@
 
 .largeCard {
     font-size: xx-large;
+    pointer-events: none;
 }
 
 .cardContainerModal {
@@ -39,6 +40,20 @@
     border-style: solid;
     text-align: center;
     font-size: medium;
+}
+
+.cardBtn-selected {
+    height: 60px;
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-style: solid;
+    text-align: center;
+    font-size: medium;
+    color: gray;
+    border-color: gray;
+    background-color: darkgray;
+    pointer-events: none;
 }
 
 .redCard {
