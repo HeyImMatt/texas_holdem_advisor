@@ -37,7 +37,7 @@ function calculatePlayerPercentage() {
 }
 
 function newHand() {
-    gameDeck = createDeck();
+    //gameDeck = createDeck();
     potAmount = undefined;
     callAmount = undefined;
     potEquity = undefined;

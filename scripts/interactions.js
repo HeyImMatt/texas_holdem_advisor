@@ -2,7 +2,6 @@ const gameDeckModal = document.querySelector('.cardContainerModal');
 let btnId;
 
 function displayDeck() {
-    renderGameDeck();
     gameDeckModal.style.display = 'block';
 }
 
@@ -17,6 +16,7 @@ function setBtnId(ele) {
 }
 
 function getCard(ele) {
+    ele.className = 'cardBtn-selected';
     let arr = ele.value.split(' ');
     value = parseInt(arr[0]);
     suit = arr[1];
