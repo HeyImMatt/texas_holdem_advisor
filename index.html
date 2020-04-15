@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texas Hold 'em Odds Calculator</title>
+    <link rel="stylesheet" href="styles/app.css" />
+    <script src="scripts/deckhandler.js" defer></script>
+    <script src="scripts/interactions.js" defer></script>
+    <script src="scripts/hands-and-odds.js" defer></script>
+    <script src="scripts/advisor.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="mainTitle">Welcome to the Texas Hold 'em Outs Calculator</h1>
+        <h3>Know when to hold 'em and know when to fold 'em</h3>        
+        <button type="button" id="newHandBtn" onclick="location.reload()">New Hand</button><br><br>
+    </header>
+    <div id="handInfo">
+        <h4>How's Your Hand?</h4>
+        <label for="potAmountInput">Enter Pot Amount</label>
+        <input type="number" id="potAmountInput" onchange="calculatePotEquity()"></input><br>
+        <label for="callAmountInput">Enter Call Amount</label>
+        <input type="number" id="callAmountInput" onchange="calculatePotEquity()"></input><br>
+        <p>Pot Equity (should be smaller than outs equity): <span class="potEquity"> </span></p>
+        <p>Outs Equity: <span class="outsEquity"></span>%</p>
+        <p>Advice: <span class="advice"> </span></p>
+        <div id="playerHand">
+            <span>Your Hand</span><br>
+            <button type="button" id="pc1Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">Add Card 1</button>
+            <button type="button" id="pc2Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">Add Card 2</button>
+            <button type="button" id="evaluateHandBtn" onclick="evaluatePlayerHandPreFlop()">Evaluate Hand</button><br><br>
+        </div>
+        <div id="communityCards">
+            <span>Community Cards</span><br>
+            <button type="button" id="cc1Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">Flop Card 1</button>
+            <button type="button" id="cc2Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">Flop Card 2</button>
+            <button type="button" id="cc3Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">Flop Card 3</button>
+            <button type="button" id="cc4Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">Turn Card</button>
+            <button type="button" id="cc5Btn" class="addCardBtn" onclick="displayDeck(), setBtnId(this)">River Card</button>
+            <button type="button" id="flopBtn" onclick="evaluateFlop()">Advice</button><br><br>
+        </div>
+        <div id='playerPercentage'>
+            <p>Chance you'll win: <span class="percentage"></span>%</p>
+        </div>
+    </div>
+    <div class="cardContainerModal">
+        <div id="gameDeck" class="cardContainerModal-content">
+        </div>
+    </div>
+</body>
+</html>

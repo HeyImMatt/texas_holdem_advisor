@@ -1,0 +1,52 @@
+.addCardBtn {
+    height: 100px;
+    width: 70px;
+    font-size: medium;
+
+}
+
+.largeCard {
+    font-size: xx-large;
+}
+
+.cardContainerModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.cardContainerModal-content{
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.cardContainer.invisible {
+    display: none;
+}
+
+.cardBtn {
+    height: 60px;
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-style: solid;
+    text-align: center;
+    font-size: medium;
+}
+
+.redCard {
+    color: red;
+    border-color: red;
+}
+
+.blackCard {
+    color: black;
+    border-color: black;
+}
