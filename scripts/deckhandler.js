@@ -1,4 +1,4 @@
-const deckSuits = ['SPADES', 'CLUBS', 'DIAMONDS', 'HEARTS'];
+const deckSuits = ['SPADES', 'DIAMONDS', 'CLUBS', 'HEARTS'];
 const deckValues = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 const communityCards = [];
 const playerCard1 = { value: this.value, suit: this.suit };
