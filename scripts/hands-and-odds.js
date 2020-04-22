@@ -44,17 +44,6 @@ const outsPercentageAtTurn = {
     outs1: 2.2,
 };
 
-const pocketPairToSet = () => {
-    for (let i = 0; i < communityCards.length; i++)
-        handType === 'PAIR' && playerCard1.value !== communityCards[i].value;
-        outsEquity = outsPercentageAtFlop.outs2
-        suggestedAction = `Pocket pair to set.`
-}
 
-//function checkForSetOrQuad
-
-const setToBoatOrQuad = () => {
-    for (let i = 0; i < communityCards.length; i++)
-        handType === 'PAIR' && playerCard1.value === communityCards[i].value;
-        suggestedAction = `Set to full house or four of a kind. Hand equity: ${outsPercentageAtFlop[13]}%`
-}
+// Have to convert to bitwise to do the right kind of checking: 
+// https://codereview.stackexchange.com/questions/184658/poker-holdem-hand-evaluation-7-cards-to-5

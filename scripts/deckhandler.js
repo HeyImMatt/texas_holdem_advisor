@@ -1,15 +1,13 @@
 const deckSuits = ['SPADES', 'DIAMONDS', 'CLUBS', 'HEARTS'];
 const deckValues = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-const communityCards = [];
-const playerCard1 = { value: this.value, suit: this.suit };
-const playerCard2 = { value: this.value, suit: this.suit };
-const communityCard1 = { value: this.value, suit: this.suit };
-const communityCard2 = { value: this.value, suit: this.suit };
-const communityCard3 = { value: this.value, suit: this.suit };
-const communityCard4 = { value: this.value, suit: this.suit };
-const communityCard5 = { value: this.value, suit: this.suit };
+const gameDeck = [];
+const gameHand = [];
 
-let gameDeck = [];
+function GameCard(id, value, suit) {
+    this.id = id,
+    this.value = value,
+    this.suit = suit
+}
 
 function createDeck() {
     for (let i = 0; i < deckSuits.length; i++) {
@@ -51,6 +49,15 @@ function renderGameDeck() {
         card.setAttribute('onclick', 'getCard(this)');
         document.getElementById('gameDeck').appendChild(card);
     }
+}
+
+function createGameCard(id, value, suit) {
+    const newCard = new GameCard(id, value, suit)
+    gameHand.push(newCard);
+    removeCard(gameDeck, value, suit);
+    showCard(btnId, value, suit)
+    gameDeckModal.style.display = 'none';
+    console.log(gameHand, gameDeck);
 }
 
 // Return the deck index of a card, remove it, and create a new array with the card object
