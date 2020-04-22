@@ -10,7 +10,6 @@
     font-size: medium;
     border-radius: 10px;
     margin-right: 5px;
-
 }
 
 .largeCard {
@@ -89,7 +88,10 @@
     --btn-font-color: #f9faf8;
     --bg-color: #f9faf8;
     --nav-color: #1d3352;
+}
 
+:root button:focus {
+    outline: none;
 }
 
 [data-theme='dark'] {
