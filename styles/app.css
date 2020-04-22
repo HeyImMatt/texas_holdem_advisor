@@ -1,8 +1,15 @@
+#mainTitle {
+    background-color: #1d3352;
+    color: var(--btn-font-color);
+    text-align: center;
+}
+
 .addCardBtn {
     height: 100px;
     width: 70px;
     font-size: medium;
     border-radius: 10px;
+    margin-right: 5px;
 
 }
 
@@ -39,7 +46,7 @@
 
 .cardBtn {
     height: 60px;
-    width: 40px;
+    width: 37px;
     padding: 5px;
     margin: 5px;
     border-style: solid;
@@ -71,4 +78,94 @@
 .blackCard {
     color: black;
     border-color: black;
+}
+
+:root {
+    --primary-color: #368dc9;
+    --primary-color-dark: #035a96;
+    --secondary-color: #d83c53;
+    --secondary-color-dark: #a50920;
+    --font-color: #1d3352;
+    --btn-font-color: #f9faf8;
+    --bg-color: #f9faf8;
+    --nav-color: #1d3352;
+
+}
+
+[data-theme='dark'] {
+    --primary-color: #368dc9;
+    --secondary-color: #d83c53;
+    --font-color: #b7b8bb;
+    --btn-font-color: #f9faf8;
+    --bg-color: #3e3d43;
+    --nav-color: #6795b7;
+}
+
+body {
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--bg-color);
+}
+
+#darkModeToggle{
+    float: right;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: var(--nav-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--btn-font-color);
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--btn-font-color);
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color);
+}
+
+p {
+    color: var(--font-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
 }
