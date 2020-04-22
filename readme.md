@@ -6,7 +6,7 @@ This is my first self-made Javascript project (i.e. not based on a tutorial). Th
 
 ![Pre-Flop Advice](https://github.com/HeyImMatt/texas_holdem_advisor/blob/bootstrap-and-styling/images/PreFlop.png)
 
-Changelog:
+Changelog:  
 4.22.20 - Refactoring and styling  
 4.15.20 - Github Repo created  
 4.10.20 - Project started
