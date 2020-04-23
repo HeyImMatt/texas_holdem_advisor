@@ -1,153 +1,153 @@
 #mainTitle {
-    background-color: #1d3352;
-    color: var(--btn-font-color);
-    text-align: center;
+  background-color: #1d3352;
+  color: var(--btn-font-color);
+  text-align: center;
 }
 
 .addCardBtn {
-    height: 105px;
-    width: 75px;
-    font-size: medium;
-    border-radius: 10px;
-    margin-right: 5px;
+  height: 105px;
+  width: 75px;
+  font-size: medium;
+  border-radius: 10px;
+  margin-right: 5px;
 }
 
 .largeCard {
-    font-size: xx-large;
-    pointer-events: none;
+  font-size: xx-large;
+  pointer-events: none;
 }
 
 .cardContainerModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.cardContainerModal-content{
-    margin-top: 35%;
-    margin-left: 5%;
-    max-width: 650px;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
+.cardContainerModal-content {
+  margin-top: 35%;
+  margin-left: 5%;
+  max-width: 650px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
 }
 
 .cardContainer.invisible {
-    display: none;
+  display: none;
 }
 
 .cardBtn {
-    height: 60px;
-    width: 37px;
-    padding: 5px;
-    margin: 5px;
-    border-style: solid;
-    text-align: center;
-    font-size: medium;
-    border-radius: 5px;
+  height: 60px;
+  width: 37px;
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  text-align: center;
+  font-size: medium;
+  border-radius: 5px;
 }
 
 .cardBtn-selected {
-    height: 60px;
-    width: 40px;
-    padding: 5px;
-    margin: 5px;
-    border-style: solid;
-    text-align: center;
-    font-size: medium;
-    color: gray;
-    border-color: gray;
-    background-color: darkgray;
-    pointer-events: none;
-    border-radius: 5px;
+  height: 60px;
+  width: 40px;
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  text-align: center;
+  font-size: medium;
+  color: gray;
+  border-color: gray;
+  background-color: darkgray;
+  pointer-events: none;
+  border-radius: 5px;
 }
 
 .redCard {
-    color: red;
-    border-color: red;
+  color: red;
+  border-color: red;
 }
 
 .blackCard {
-    color: black;
-    border-color: black;
+  color: black;
+  border-color: black;
 }
 
 :root {
-    --primary-color: #368dc9;
-    --primary-color-dark: #035a96;
-    --secondary-color: #d83c53;
-    --secondary-color-dark: #a50920;
-    --font-color: #1d3352;
-    --btn-font-color: #f9faf8;
-    --bg-color: #f9faf8;
-    --nav-color: #1d3352;
+  --primary-color: #368dc9;
+  --primary-color-dark: #035a96;
+  --secondary-color: #d83c53;
+  --secondary-color-dark: #a50920;
+  --font-color: #1d3352;
+  --btn-font-color: #f9faf8;
+  --bg-color: #f9faf8;
+  --nav-color: #1d3352;
 }
 
 :root button:focus {
-    outline: none;
+  outline: none;
 }
 
 [data-theme='dark'] {
-    --primary-color: #368dc9;
-    --secondary-color: #d83c53;
-    --font-color: #b7b8bb;
-    --btn-font-color: #f9faf8;
-    --bg-color: #3e3d43;
-    --nav-color: #6795b7;
+  --primary-color: #368dc9;
+  --secondary-color: #d83c53;
+  --font-color: #b7b8bb;
+  --btn-font-color: #f9faf8;
+  --bg-color: #3e3d43;
+  --nav-color: #6795b7;
 }
 
 body {
-    padding: 15px;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--bg-color);
+  padding: 15px;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--bg-color);
 }
 
-#darkModeToggle{
-    float: right;
+#darkModeToggle {
+  float: right;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
-    background-color: var(--nav-color);
+  background-color: var(--nav-color);
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--btn-font-color);
-    border-radius: 10px;
-    border-color: transparent;
-    padding: 10px;
-    margin-left: 5px;
+  background-color: var(--primary-color);
+  color: var(--btn-font-color);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+  margin-left: 5px;
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-color-dark);
+  background-color: var(--primary-color-dark);
 }
 
 .btn-secondary {
-    background-color: var(--secondary-color);
-    color: var(--btn-font-color);
-    border-radius: 10px;
-    border-color: transparent;
-    padding: 10px;
+  background-color: var(--secondary-color);
+  color: var(--btn-font-color);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
 }
 
 .btn-secondary:hover {
-    background-color: var(--secondary-color-dark);
+  background-color: var(--secondary-color-dark);
 }
 
 h1,
@@ -156,18 +156,18 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--font-color);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
 }
 
 p {
-    color: var(--font-color);
+  color: var(--font-color);
 }
 
 a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
