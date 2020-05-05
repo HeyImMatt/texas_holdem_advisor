@@ -46,5 +46,5 @@ function showCard(btnId, value, suit) {
   } else if (value === 11) {
     value = 'J';
   }
-  card.innerHTML = value + '' + icon;
+  card.innerHTML = `${icon}<br>${value}`;
 }
