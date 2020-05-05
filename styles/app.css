@@ -97,7 +97,7 @@ body {
 }
 
 #mainTitle {
-  background-color: #1d3352;
+  background-color: var(--primary-color-dark);
   color: var(--btn-font-color);
   text-align: center;
 }
