@@ -48,7 +48,7 @@ function renderGameDeck() {
       value = 'J';
     } else value = gameDeck[i].value;
     card.value = gameDeck[i].value + ' ' + gameDeck[i].suit;
-    card.innerHTML = value + '' + icon;
+    card.innerHTML = `${icon}<br>${value}`;
     card.setAttribute('onclick', 'getCard(this)');
     document.getElementById('gameDeck').appendChild(card);
   }
