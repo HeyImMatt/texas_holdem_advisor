@@ -57,7 +57,7 @@ Via command line:
 ```
 $ git clone https://github.com/HeyImMatt/texas_holdem_advisor.git
 
-$ cd programming-language-suggester
+$ cd texas_holdem_advisor
 
 $ code .
 
